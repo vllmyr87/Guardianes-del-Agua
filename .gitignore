@@ -9,6 +9,15 @@ venv/
 env/
 ENV/
 .venv/
+.venv*/
+venv.bak/
+env.bak/
+# Environment variables / local configuration
+.env
+.env.*
+!.env.example
+!.env.template
+*.local
 
 # Distribution / packaging
 build/
@@ -23,6 +32,7 @@ sdist/
 var/
 wheels/
 share/python-wheels/
+pip-wheel-metadata/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -44,6 +54,9 @@ dmypy.json
 .pyre/
 .pytype/
 cython_debug/
+
+# Python tooling
+*.log
 
 # IDE and editor settings
 .idea/
