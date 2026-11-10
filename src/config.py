@@ -1,0 +1,13 @@
+"""Configuración general de la ventana y del bucle principal."""
+
+ANCHO_VENTANA = 1280
+ALTO_VENTANA = 720
+FPS = 60
+TITULO_VENTANA = "Guardianes del Agua"
+
+COLOR_FONDO = (12, 45, 68)
+COLOR_TEXTO = (240, 250, 255)
+COLOR_TEXTO_SECUNDARIO = (176, 213, 227)
+COLOR_BOTON = (19, 145, 164)
+COLOR_BOTON_HOVER = (24, 174, 184)
+COLOR_BORDE_BOTON = (112, 227, 216)
