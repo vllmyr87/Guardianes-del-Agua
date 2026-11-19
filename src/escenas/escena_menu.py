@@ -70,4 +70,5 @@ class EscenaMenu(EscenaBase):
         pantalla.blit(etiqueta_boton, etiqueta_boton.get_rect(center=self._boton_comenzar.center))
 
     def _comenzar(self) -> None:
+        self._gestor_escenas.reiniciar_escena(EstadoEscena.JUEGO)
         self._gestor_escenas.cambiar_escena(EstadoEscena.JUEGO)
