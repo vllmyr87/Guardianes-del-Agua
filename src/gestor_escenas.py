@@ -35,6 +35,13 @@ class GestorEscenas:
 
         self._estado_actual = estado
 
+    def reiniciar_escena(self, estado: EstadoEscena) -> None:
+        """Restablece una escena registrada sin cambiar la escena activa."""
+        if estado not in self._escenas:
+            raise KeyError(f"No hay ninguna escena registrada para {estado.name}.")
+
+        self._escenas[estado].reiniciar()
+
     @property
     def escena_actual(self) -> EscenaBase:
         """Devuelve la escena activa o informa si aún no se configuró."""

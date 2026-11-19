@@ -11,6 +11,9 @@ class EscenaBase(ABC):
     def manejar_evento(self, evento: pygame.event.Event) -> None:
         """Procesa un evento de Pygame; las escenas pueden sobrescribirlo."""
 
+    def reiniciar(self) -> None:
+        """Restablece la escena si esta conserva estado entre partidas."""
+
     @abstractmethod
     def actualizar(self, delta_time: float) -> None:
         """Actualiza la lógica de la escena usando delta_time en segundos."""
